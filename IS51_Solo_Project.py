@@ -24,3 +24,42 @@ then print "You have used up your allotment of guesses.", the print
 "The correct answer is 'Noctis'"
 
 """
+"""
+import random
+num = generate random number
+
+if num is greater than 50,
+    then the result will be "Emperor's Coin"
+otherwise if num is > 40,
+    then the result will be "Noble's Coin"
+otherwise if num is > 30,
+    then the result will be "Knight's Coin"
+otherwise if num is > 20,
+    then the result will be "Footman's Coin"
+otherwise if num is > 10,
+    then the result will be "Peasant's Coin"
+otherwise
+    the result will be "Chaos Coin"
+
+loop tree times
+    print the output (fate) to the user
+
+sub
+    question = "Who is the Crown Prince of the Kingdom of Lucis?"
+    answer = "Noctis"
+    ask(question, answer)
+
+ask
+    tries = 0
+    loop three times
+        increment tries
+        ask user input()
+        check to see if user input us equal to answer
+            if so, print "Correct" the exit loop
+        if not correct
+            print to user "You have used up your allotment of guesses."
+            print the correct "The correct answer is 'Noctis'"
+
+sub
+
+"""
