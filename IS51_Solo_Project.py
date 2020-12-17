@@ -63,3 +63,68 @@ ask
 sub
 
 """
+import random
+
+def main():
+    results = []
+
+    for i in range(0, 3):
+        results.append(spin())
+
+    print("results", results) 
+    Hero = The_Emperor_have_Arise(results)
+
+    if (Hero):
+        print("Hero's Coin acquire!")
+    else:
+        print("You are broke, travel back in time to try again!")
+
+    option = input("Unlucky fellow, best try again!")
+
+    if option.lower() == "t" or option.lower() == "t = travel back in time":
+        main()
+
+def spin():
+    rand_num = random.randint(1, 15)
+    output = ""
+    if(rand_num > 50):
+        output = "Emperor's Coin"
+    elif(rand_num > 40):
+        output = "Noble's Coin"
+    elif(rand_num > 30):
+        output = "Knight's Coin"
+    elif(rand_num > 20):
+        output = "Footman's Coin"
+    elif(rand_num > 10):
+        output = "Peasant's Coin"
+    else:
+        output = "Chaos Coin"
+
+    print(output, end="")
+    return output
+
+def The_Emperor_have_Arise(results):
+    return (results[0] == results[1] == results[2])
+       
+main()
+
+
+def sub():
+    question = "Who is the Crown Prince of the Kingdom of Lucis?"
+    answer = "Noctis"
+    ask(question, answer)
+
+def ask(question, answer, max_tries=3):
+    tries = 0
+    ans = ""
+    while tries < max_tries:
+        tries = tries + 1
+        print(tries)
+        ans = input(question) #Noctis
+        if ans == answer:
+            print("Correct!")
+            break
+    if ans != answer:
+        print("You have used up your allotment of guesses.")
+
+sub()
