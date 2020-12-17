@@ -77,11 +77,11 @@ def main():
     if (Hero):
         print("Hero's Coin acquire!")
     else:
-        print("You are broke, travel back in time to try again!")
+        print("Chipped Heroo's Coin acquire!")
 
-    option = input("Unlucky fellow, best try again!")
+    option = input("You got enough Coin!")
 
-    if option.lower() == "t" or option.lower() == "t = travel back in time":
+    if option.lower() == "y" or option.lower() == "y = try again":
         main()
 
 def spin():
