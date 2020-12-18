@@ -43,6 +43,8 @@ otherwise
 
 loop tree times
     print the output (fate) to the user
+    
+main()
 
 sub
     question = "Who is the Crown Prince of the Kingdom of Lucis?"
